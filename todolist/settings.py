@@ -62,12 +62,12 @@ WSGI_APPLICATION = "todolist.wsgi.application"
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
 
-engineString = os.environ.get("DB_ENGINE","")
-nameString = os.environ.get("DB_NAME","")
-userString = os.environ.get("DB_USER","")
-passwordString = os.environ.get("DB_PASSWORD","")
-hostString = os.environ.get("DB_HOST","")
-portString = os.environ.get("DB_PORT","")
+engineString = os.environ.get("ENGINE","")
+nameString = os.environ.get("NAME","")
+userString = os.environ.get("USER","")
+passwordString = os.environ.get("PASSWORD","")
+hostString = os.environ.get("HOST","")
+portString = os.environ.get("PORT","")
 
 
 DATABASES = {
