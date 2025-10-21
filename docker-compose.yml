@@ -1,4 +1,3 @@
-# docker-compose.yml
 version: '3'
 networks:
   todoapp-net:
@@ -12,7 +11,7 @@ services:
       - "8080:8080"
     environment:
       - PYTHONUNBUFFERED=1
-      - ENGINE=mysql.connector.django
+      - ENGINE=django.db.backends.mysql
       - NAME=app_db
       - USER=app_user
       - PASSWORD=1234
